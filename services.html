@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services Rendered</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+
+    <style>
+        body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+ }
+ 
+ header {
+   background-color: #333;
+   color: #fff;
+   padding: 20px;
+   text-align: center;
+ }
+ 
+ section {
+   padding: 20px;
+ }
+ 
+ h2 {
+   margin-top: 0;
+ }
+ 
+ .service {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 30px;
+ }
+ 
+ .service img {
+   max-width: 300px;
+   max-height: 200px;
+   margin-right: 20px;
+ }
+ 
+ .service-details {
+   flex: 1;
+ }
+
+button{
+  padding: 7px;
+  background: green;
+  color: white;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+  .service{
+    flex-direction: column;
+
+  }
+}
+   </style>
+</head>
+<body>
+    
+    <header>
+        <h1>Construction and House Plan Design Services</h1>
+      </header>
+
+      <section id="house-plan-design">
+        <h2>House Plan Design</h2>
+        <div class="service">
+          <img src="design1.jpg" alt="House Plan Design">
+          <div class="service-details">
+            <p> We are a team of specialist in modern house plan designs, we do all types of plans. Feel free to contact our team
+              or get yourself a free quatation of our morden plans.</p>
+            <button onclick="requestservice(12)">Request Service</button>
+          </div>
+        </div>
+        <script>
+          function requestservice(imageNumber) {
+              window.location.href = 'requestservice.html?image=' + imageNumber;
+          }
+          </script>
+      </section>
+
+    <section id="roofing">
+        <h2>Roofing</h2>
+        <div class="service">
+          <img src="roofing.jpg" alt="Roofing">
+          <div class="service-details">
+            <p>For house to be most beautiful it all comes down to its perfect roofing, we understand this very well, this is why 
+              we do our best at rooifing. we do flat roof and buttefly roofing.
+              </p>
+            <button onclick="requestservice(13)">Request Service</button>
+          </div>
+        </div>
+        <script>
+          function requestservice(imageNumber) {
+              window.location.href = 'requestservice.html?image=' + imageNumber;
+          }
+          </script>
+      </section>
+      <section id="House-Renovations">
+        <h2>House Renovations</h2>
+        <div class="service">
+          <img src="art1.jpg" alt="Renovations">
+          <div class="service-details">
+            <p>Feel like you home is old and needs an upgrade, you are welcome. We can renovate you home and give it a new
+              modern look that you desire with just a click of a button.
+              </p>
+            <button onclick="requestservice(14)">Request Service</button>
+          </div>
+        </div>
+        <script>
+          function requestservice(imageNumber) {
+              window.location.href = 'requestservice.html?image=' + imageNumber;
+          }
+          </script>
+      </section>
+      
+      <section id="painting">
+        <h2>Painting</h2>
+        <div class="service">
+          <img src="painter.jpg" alt="Painting">
+          <div class="service-details">
+            <p>Our expert painters will transform your interior and exterior spaces with quality paintwork.</p>
+            <button onclick="requestservice(15)">Request Service</button>
+          </div>
+        </div>
+        <script>
+          function requestservice(imageNumber) {
+              window.location.href = 'requestservice.html?image=' + imageNumber;
+          }
+          </script>
+      </section>
+      
+      <section id="3d-renderings">
+        <h2>3D Renderings</h2>
+        <div class="service">
+          <img src="General-Contractors-rev2.jpg" alt="3D Renderings">
+          <div class="service-details">
+            <p>We offer most dynamically designed renderings tht potray a clear look and feel of your desired  house. It is advantagious 
+              for you to get a virtual demostration of what we can do.</p>
+            <button onclick="requestservice(16)">Request Service</button>
+          </div>
+        </div>
+        <script>
+          function requestservice(imageNumber) {
+              window.location.href = 'requestservice.html?image=' + imageNumber;
+          }
+          </script>
+      </section>
+      
+      <section id="tiling">
+        <h2>Tiling</h2>
+        <div class="service">
+          <img src="tilingJob.jpg" alt="Tiling">
+          <div class="service-details">
+            <p>We also considered the look and feel of your house by delivering the most modern and quality floors and walls. We install 
+              tiles of all kinds from interior to exterior, floor and walls.
+              </p>
+            <button onclick="requestservice(17)">Request Service</button>
+          </div>
+        </div>
+        <script>
+          function requestservice(imageNumber) {
+              window.location.href = 'requestservice.html?image=' + imageNumber;
+          }
+          </script>
+      </section>
+      
+      <section id="ceiling">
+        <h2>Ceiling</h2>
+        <div class="service">
+          <img src="ceiling.jpg" alt="Ceiling">
+          <div class="service-details">
+            <p>Ceiling gives a home a complete interior look, we make it our goal to give you a complete home by installing ceilings, our team can also 
+              repair an old or damaged seiling.
+              </p>
+            <button onclick="requestservice(18)">Request Service</button>
+          </div>
+        </div>
+        <script>
+          function requestservice(imageNumber) {
+              window.location.href = 'requestservice.html?image=' + imageNumber;
+          }
+          </script>
+      </section>
+      <section id="general-construction-service">
+        <h2>General Construction</h2>
+        <div class="service">
+          <img src="art2.jpg" alt="Ceiling">
+          <div class="service-details">
+            <P>
+              Our experienced contructors make it their goal to build you a desired building, we archive this by making sure we follow
+              all house plan designs as they are at all times.
+            </P>
+            <button onclick="requestservice(19)">Request Service</button>
+          </div>
+        </div>
+        <script>
+          function requestservice(imageNumber) {
+              window.location.href = 'requestservice.html?image=' + imageNumber;
+          }
+          </script>
+      </section>
+      
+</body>
+</html>

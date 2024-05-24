@@ -1,0 +1,101 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+#about-us, #what-we-do, #company-details {
+    margin-bottom: 40px;
+}
+
+.about-content, .what-we-do-content, .company-details-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+.about-image, .what-we-do-image, .company-image {
+    flex: 1 1 40%;
+}
+
+.about-text, .what-we-do-text, .company-text {
+    flex: 1 1 60%;
+}
+
+img {
+    max-width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+#company-details{
+    margin-bottom: 80px;
+}
+
+@media (max-width: 900px) {
+    .about-image, .what-we-do-image, .company-image, 
+    .about-text, .what-we-do-text, .company-text {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+    #symbols{
+        display: none;
+    }
+    img{
+        max-width: 95%;
+    }
+}

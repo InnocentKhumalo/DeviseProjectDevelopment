@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="leaveMessageStyle.css">
+    <title>Responsive Form</title>
+</head>
+<body>
+    <form id="leaveMessage" method="post" action="https://script.google.com/macros/s/AKfycbxauTOhCDnEsJAYaNvyYo8RpRRSNEexh3heCpXEZta-3OwvxQfWqfSPO2MZvA44LanS/exec" name="Message-Form">
+        <div id="messageUs">
+            <div class="message-content">
+                <h1>Leave Us A Message <span class="closeicon"><i class="fa fa-close"></i></span></h1>
+                <div class="grid-elements">
+                    <input id="firstName" type="text" name="first_name" placeholder="First Name" required>
+                    <input id="lastName" type="text" name="last_name" placeholder="Last Name" required>
+                    <input id="phoneNumber" type="tel" name="phone_number" placeholder="Phone Number" required>
+                    <input id="email" type="email" name="email" placeholder="Email" required>
+                </div>
+                <textarea name="message" id="yourMessage" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </div>
+        </div>
+    </form>
+    
+    <script src="script.js"></script>
+</body>
+</html>

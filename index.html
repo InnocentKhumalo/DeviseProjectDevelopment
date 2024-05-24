@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devise Project Development</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Thumbnail Image for Social Media -->
+    <meta property="og:image" content="https://DeviseProjectDevelopment.co.za/thumb.jpg">
+    <!-- Thumbnail Image for Browsers -->
+    <link rel="icon" type="image/jpg" href="thumb.jpg">
+    <script src="script.js"></script>
+</head>
+
+
+<body>
+    <header id="header">
+        <div id="sidebar-container">
+            <i class="fas fa-close" style="font-size: 35px;" onclick="hidesidebar()"></i>
+            <ul class="sidebar">
+                <li><a href="index.html" class="added-links" style="color: black;">Home</a></li>
+                <div class="sidebar-1st-dropdown">
+                    <li onclick="showFirstDropdown()">Construction <i id="icon1" class="fas fa-angle-right"></i></li>
+                    <div id="first-dropdown">
+                        <li><a href="services.html" style="color: black;">Tiling  </a></li>
+                        <li><a href="services.html" style="color: black;">Painting</a></li>
+                        <li><a href="services.html" style="color: black;">Roofing </a></li>
+                        <li><a href="services.html" style="color: black;">Ceiling </a></li>
+                        <li><a href="services.html" style="color: black;">View All</a></li>
+                    </div>
+                </div>
+                <li><a href="services.html" class="added-links" style="color: black;">3D Rendering</a></li>
+                <li><a href="services.html" class="added-links" style="color: black;" >Renovations</a></li>
+                <div class="sidebar-2nd-dropdown">
+                    <li onclick="showSecondDropdown()">House Plans <i id="icon2" class="fas fa-angle-right"></i></li>
+                    <div id="second-dropdown">
+                        <li><a href="services.html" class="added-links" style="color: black;" >2 Bedroom </a></li>
+                        <li><a href="services.html" class="added-links" style="color: black;" >3 Bedroom </a></li>
+                        <li><a href="services.html" class="added-links" style="color: black;" >4 Bedroom </a></li>
+                        <li><a href="services.html" class="added-links" style="color: black;" >5 Bedroom </a></li>
+                        <li><a href="services.html" class="added-links" style="color: black;" > 6-9 Bedroom</a>    </li>
+                        <li><a href="services.html" class="added-links" style="color: black;" >Butterfly Design </a>    </li>
+                        <li><a href="services.html" class="added-links" style="color: black;" > Tuscan/Scotch</a>    </li>
+                        <li><a href="services.html" class="added-links" style="color: black;" >Double Story </a>    </li>
+                        <li><a href="services.html" class="added-links" style="color: black;" > Flat Roof</a>    </li>
+                    </div>
+                </div>
+                <li><a href="learnaboutus.html" class="added-links" style="color: black;" >About Us</a></li>
+                <div class="cont-text">
+                    <li onclick="showMessageLinks()">Contact Us <i id="icon3" class="fas fa-angle-right"></i> </li>
+                    
+                    <div id="cont-content">
+                        <a href="leaveMessage.html" style="padding: 7px; width: 100%;">Leave A Message</a>
+                    <div class="myLink">
+                        <a  href="#" onclick="showLinks()">Let's Connect <i id="icon4" class="fas fa-angle-right"></i></a>
+                    </div>
+                        <div id="link-socials">
+                            <div>
+                                <a href="https://www.facebook.com/DPD-HousePlanningandGeneralConstruction.org/"
+                                target="_blank"
+                                title="Facebook" style="background-color: unset; border-bottom: none;">
+                                <i class="fa fa-facebook"></i></a>
+                                <a href="mailto:khozasiyabonga1@gmail.com?subject=Service Request"
+                                title="Email"
+                                target="_blank" style="background-color: unset; border-bottom: none;"> <i class="fa fa-envelope"></i></a>
+                            </div>
+                            <div>
+                                <a href="tel:072-464-7583"
+                                title="Call"
+                                target="_blank"  style="background-color: unset; border-bottom: none;">
+                                <i class="fa fa-phone"></i></a>
+                                <a href=
+                                "https://api.whatsapp.com/send?phone=+27724647583"
+                                  title="Whatsapp"     
+                                  target="_blank" style="background-color: unset; border-bottom: none;">
+                                  <i class="fa fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                </div>
+            </ul>
+            
+        </div>
+        
+        
+        <nav class="navbar">
+            <i class="fas fa-bars" id="fa-bars" onclick="showsidebar()"></i>
+            <div class="logo">
+                <img src="LOGO.jpg" alt="logo image">
+            </div>
+            <div class="navbar-items">
+                
+            <div class="item"><a href="index.html" style="color: orange; font-weight: bolder;">Home</a></div>
+            <div class="dropdown">
+                <div class="construction-item"><a href="#" style="color: orange; font-weight: bolder;">Construction</a></div>
+            <div class="construction-dropdown">
+                <a href="services.html" class="construction-links" style="color: orange; font-weight: bold;">TILING</a>
+                <a href="services.html" class="construction-links" style="color: orange; font-weight: bold;">PAINTING</a>
+                <a href="services.html" class="construction-links" style="color: orange; font-weight: bold;">ROOFING</a>
+                <a href="services.html" class="construction-links" style="color: orange; font-weight: bold;">CEILING</a>
+                <a href="services.html" class="construction-links" style="color: orange; font-weight: bold;">VIEW ALL</a>
+            </div>
+            </div>
+            <div class="item"><a href="services.html" style="color: orange; font-weight: bolder;">3D Renderings</a></div>
+            <div class="item"><a href="services.html" style="color: orange; font-weight: bolder;">Renovations</a></div>
+            
+            <div class="dropdown2">
+                <div class="house-plans"><a href="#" style="color: orange; font-weight: bolder;">House Plans</a></div>
+                <div class="plans">
+                    <div class="left-link">
+                    <a href="services.html" class="added-links" style="color: orange; font-weight: bold;">2 BEDROOM</a>
+                    <a href="services.html" class="added-links" style="color: orange; font-weight: bold;">3 BEDROOM</a>
+                    <a href="services.html" class="added-links" style="color: orange; font-weight: bold;">4 BEDROOM</a>
+                    <a href="services.html" class="added-links" style="color: orange; font-weight: bold;">5 BEDROOM</a>
+                    <a href="services.html" class="added-links" style="color: orange; font-weight: bold;">6-9 BEDROOM</a>
+                </div>
+                <div class="right-link">
+                    <a href="services.html" class="added-links" style="color: orange; font-weight:bold">BUTTERFLY DESIGN</a>
+                    <a href="services.html" class="added-links" style="color: orange; font-weight:bold">TUSCAN/SCOTCH</a>
+                    <a href="services.html" class="added-links" style="color: orange; font-weight:bold">DOUBLE STORY</a>
+                    <a href="services.html" class="added-links" style="color: orange; font-weight:bold">FLAT ROOF</a>
+            </div>
+        </div>
+            
+            </div>
+            <div class="item"><a href="learnaboutus.html" style="color: orange; font-weight: bolder;">About Us</a></div>
+            <div class="contact-container">
+                <div class="item"><a href="#" style="color: orange; font-weight: bolder;">Contact Us</a></div>
+                <div class="contact-content">
+                    <a href="#" onclick="openLeaveMessage()" style="color: orange; margin-right: 5px;">Leave Us A Message</a>
+                    <div class="social-content">
+                        <a  href="#" style="color: orange;">Let's Connect</a>
+                        <div class="header-socials">
+                            <div>
+                                <a href="https://www.facebook.com/DPD-HousePlanningandGeneralConstruction.org/"
+                                target="_blank"
+                                title="Facebook" style="color: white;">
+                                <i class="fa fa-facebook"></i></a>
+                                <a href="mailto:khozasiyabonga1@gmail.com?subject=Service Request"
+                                title="Email"
+                                target="_blank" style="color: white;"> <i class="fa fa-envelope"></i></a>
+                            </div>
+                            <div>
+                                <a href="tel:072-464-7583"
+                                title="Call"
+                                target="_blank">
+                                <i class="fa fa-phone" style="color: white;"></i></a>
+                                <a href=
+                                "https://api.whatsapp.com/send?phone=+27724647583"
+                                  title="Whatsapp"     
+                                  target="_blank" style="color: white;">
+                                  <i class="fa fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            </div>
+            </div>
+        </nav>
+        <div class="header-text">
+            <h1 class="bussiness-name">
+                DEVISE PROJECT DEVELOPMENT
+            </h1>
+            <hr id="hr1" style="color: orange;">
+            <br>
+                    <p class="about-header">
+                        Architectural Design & General Construction <br>
+                        House plan design, Home renovations 3D Renderings..etc
+                    </p>
+        </div>
+    </header>
+    <h1 id="vigorious">
+        Plans On Vigorious Demand</h1>
+        <div class="uploaded-plans">
+            
+        </div>
+    <div class="high-demand">
+        <div class="houses">
+            <img id="hd-images" src="WhatsApp6.jpg" alt="house plans images" onclick="showrequestservice(1)">
+            <p class="TopLeft-Text">Shop Now</p>
+            <div id="ProductName">2 Bedroom</div>
+        </div>
+
+        <div class="houses">
+            <img  id="hd-images" src="3 bedroom.jpg" alt="house plans images" onclick="showrequestservice(2)" >
+            <p class="TopLeft-Text">Shop Now</p>
+            <div id="ProductName">3 Bedroom </div>
+
+        </div>
+
+        <div class="houses">
+            <img id="hd-images" src="WhatsApp4.jpg" alt="house plans images" onclick="showrequestservice(3)">
+            <p class="TopLeft-Text">Shop Now</p>
+            <div id="ProductName">4 Bedroom</div>
+        </div>
+
+        <div class="houses">
+            <img id="hd-images" src="WhatsApp7.jpg" alt="house plans images" onclick="showrequestservice(4)">
+            <p class="TopLeft-Text">Shop Now</p>
+            <div id="ProductName">5 Bedroom</div>
+        </div>
+
+        <div class="houses">
+            <img id="hd-images" src="WhatsApp2.jpg" alt="house plans images" onclick="showrequestservice(5)">
+            <p class="TopLeft-Text">Shop Now</p>
+            <div id="ProductName">6 Bedroom Double Story</div>
+        </div>
+
+        <div class="houses">
+            <img id="hd-images" src="WhatsApp1.jpg" alt="house plans images" onclick="showrequestservice(6)">
+            <p class="TopLeft-Text">Shop Now</p>
+            <div id="ProductName">Double Story</div>
+        </div>
+
+        <div class="houses">
+            <img id="hd-images" src="WhatsApp5.jpg" alt="house plans images" onclick="showrequestservice(7)">
+            <p class="TopLeft-Text">Shop Now</p>
+            <div id="ProductName">Butterfly Double Story</div>
+        </div>
+
+        <div class="houses">
+            <img id="hd-images" src="tuscan.jpg" alt="house plans images" onclick="showrequestservice(8)">
+            <p class="TopLeft-Text">Shop Now</p>
+            <div id="ProductName">Tuscan/Scotch Roofing</div>
+        </div>
+        <div class="houses">
+            <img id="hd-images" src="maxresdefault.jpg" alt="house plans images" onclick="showrequestservice(9)">
+            <p class="TopLeft-Text">Shop Now</p>
+            <div id="ProductName">Butterfly Roofing</div>
+        </div>
+        
+       
+        
+        <div class="houses">
+            <img id="hd-images" src="WhatsApp3.jpg" alt="house plans images" onclick="showrequestservice(10)">
+            <p class="TopLeft-Text">Shop Now</p>
+            <div id="ProductName">Mall/Complex</div>
+        </div>
+        
+        <div class="houses">
+            <img id="hd-images" src="communitybuilding.jpg" alt="house plans images" onclick="showrequestservice(11)">
+            <p class="TopLeft-Text">Shop Now</p>
+            <div id="ProductName">Community Buildings</div>
+        </div>
+    </div>
+
+    <script>
+        function showrequestservice(imageNumber) {
+            window.location.href = 'requestservice.html?image=' + imageNumber;
+        }
+        </script>
+        
+
+        <div class="slideshow-container" id="slideContainer">
+            <h1 style="color: orangered;">WELCOME TO <br> <span style="color: darkolivegreen;">DEVISE PROJECT DEVELOPMENT</span></h1>
+    
+            <div class="slides">
+                <div class="slide">
+                    <img src="slide1.jpg" alt="Image 1">
+                    <div class="slideshow-content">
+                        <h2>House Plan Design</h2>
+                        <p>Experienced designers create custom house plans tailored to your needs and preferences.</p>
+                        <button onclick="showServices()">Read More <span><i class="fa fa-arrow-right"></i></span></button>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="design1.jpg" alt="Image 2">
+                    <div class="slideshow-content">
+                        <h2>3D Renderings</h2>
+                        <p>We provide realistic 3D renderings to help you visualize your construction or renovation projects.</p>
+                        <button onclick="showServices()">Read More <span><i class="fa fa-arrow-right"></i></span></button>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="art2.jpg" alt="Image 3">
+                    <div class="slideshow-content">
+                        <h2>General Constructions</h2>
+                        <p>We build modern homes at flexible rates to help make your dream home come true.</p>
+                        <button onclick="showServices()">Read More <span><i class="fa fa-arrow-right"></i></span></button>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="roofing.jpg" alt="Image 4">
+                    <div class="slideshow-content">
+                        <h2>Roofing</h2>
+                        <p>We offer professional roofing services to protect your home from the elements.</p>
+                        <button onclick="showServices()">Read More <span><i class="fa fa-arrow-right"></i></span></button>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="art1.jpg" alt="Image 5">
+                    <div class="slideshow-content">
+                        <h2>House Renovations</h2>
+                        <p>Rebrand your house and give it a modern look with us.</p>
+                        <button onclick="showServices()">Read More <span><i class="fa fa-arrow-right"></i></span></button>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="painter.jpg" alt="Image 6">
+                    <div class="slideshow-content">
+                        <h2>Painting</h2>
+                        <p>We do interior and exterior paint jobs, keep in touch with us for all paint job desires.</p>
+                        <button onclick="showServices()">Read More <span><i class="fa fa-arrow-right"></i></span></button>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="tilingJob.jpg" alt="Image 7">
+                    <div class="slideshow-content">
+                        <h2>Tiling</h2>
+                        <p>Our skilled tilers deliver precision tiling solutions for bathrooms, kitchens, and floors.</p>
+                        <button onclick="showServices()">Read More <span><i class="fa fa-arrow-right"></i></span></button>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="ceiling.jpg" alt="Image 8">
+                    <div class="slideshow-content">
+                        <h2>Ceiling</h2>
+                        <p>We offer a variety of ceiling options to enhance the aesthetics and functionality of your space.</p>
+                        <button class="slideshow-container-button" onclick="showServices()">Read More <span><i class="fa fa-arrow-right"></i></span></button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Navigation buttons -->
+            <a class="prev" onclick="prevSlide()">&#10094;</a>
+            <a class="next" onclick="nextSlide()">&#10095;</a>
+        </div>
+        <div class="dots-container">
+            <!-- Dots will be added dynamically using JavaScript -->
+        </div>
+        
+        <script>
+            // Slideshows JavaScript
+            let slideIndex = 0;
+            const slidesToShow = 3; // Number of slides to show at a time
+            const slideContainer = document.querySelector('.slides');
+            const totalSlides = document.querySelectorAll('.slide').length;
+            let interval;
+    
+            // Call startAutoscroll on page load
+            document.addEventListener("DOMContentLoaded", function() {
+                startAutoscroll();
+                addHoverEventListeners();
+            });
+    
+            // Start autoscroll
+            function startAutoscroll() {
+                interval = setInterval(nextSlide, 4000); // Scroll every 4 seconds
+            }
+    
+            // Stop autoscroll
+            function stopAutoscroll() {
+                clearInterval(interval);
+            }
+    
+            // Show the current slides
+            function showSlides() {
+                const slides = document.querySelectorAll('.slide');
+                for (let i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (let i = slideIndex; i < slideIndex + slidesToShow; i++) {
+                    const index = i % totalSlides; // Wrap around to the beginning if end is reached
+                    slides[index].style.display = "block";
+                }
+            }
+    
+            // Go to the previous slide
+            function prevSlide() {
+                stopAutoscroll();
+                slideIndex = (slideIndex - 1 + totalSlides) % totalSlides;
+                showSlides();
+                updateDots(); // Update active dot
+            }
+    
+            // Go to the next slide
+            function nextSlide() {
+                slideIndex = (slideIndex + 1) % totalSlides;
+                showSlides();
+                updateDots(); // Update active dot
+            }
+    
+            // Go to a specific slide
+            function goToSlide(n) {
+                stopAutoscroll();
+                slideIndex = n;
+                showSlides();
+                updateDots(); // Update active dot
+            }
+    
+            // Create dots for navigation
+            const dotsContainer = document.querySelector('.dots-container');
+            let dotsHTML = '';
+            for (let i = 0; i < totalSlides; i++) {
+                dotsHTML += `<span class="dot" onclick="goToSlide(${i})"></span>`;
+            }
+            dotsContainer.innerHTML = dotsHTML;
+    
+            // Initially show the slides
+            showSlides();
+    
+            // Update active dot
+            function updateDots() {
+                const dots = document.querySelectorAll('.dot');
+                for (let i = 0; i < dots.length; i++) {
+                    dots[i].classList.remove('active-slide');
+                }
+                dots[slideIndex].classList.add('active-slide');
+            }
+    
+            // Update active dot initially
+            updateDots();
+    
+            // Add hover event listeners to the slideshow container
+            function addHoverEventListeners() {
+                const container = document.querySelector('.slideshow-container');
+                container.addEventListener('mouseenter', stopAutoscroll);
+                container.addEventListener('mouseleave', startAutoscroll);
+            }
+
+function showServices() {
+    window.location.href = "services.html";
+}
+    </script>
+
+    <div id="constructions" class="constructions">
+        <h1>General Construction</h1>
+        <div class="ideal-home">
+            <div id="home">
+                <img src="General-Contractors-rev2.jpg" alt="" class="home-images">
+                <div id="product-details">
+                <div id="product-details-name">Spacious Planned Home </div>
+                </div>
+                
+            </div>
+            <div id="home">
+                <img src="interior.jpg" alt="" class="home-images">
+                <div id="product-details">
+                    <div id="product-details-name">Interior Design</div>
+                    </div>
+                    
+            </div>
+            <div id="home">
+                <img src="exterior.jpg" alt="" class="home-images">
+                <div id="product-details">
+                    <div id="product-details-name">Guaranteed Quality Material</div>
+                    </div>
+                    
+            </div>
+            <div id="home">
+                <img src="IMG1.jpg" alt="" class="home-images">
+                <div id="product-details">
+                    <div id="product-details-name">Quality Service Delivery</div>
+                    </div>
+                    
+            </div>
+            <div id="home">
+                <img src="IMG2.jpg" alt="" class="home-images">
+                <div id="product-details">
+                    <div id="product-details-name">General Construction</div>
+                    </div>
+                    
+            </div>
+            <div id="home">
+                <img src="construction2.jpg" alt="" class="home-images">
+                <div id="product-details">
+                    <div id="product-details-name">General Contrators</div>
+                    </div>
+                    
+            </div>
+            <div id="home">
+                <img src="time.jpg" alt="" class="home-images">
+                <div id="product-details">
+                    <div id="product-details-name">Accurate Construction</div>
+                    </div>
+                    
+            </div>
+            <div id="home">
+                <img src="IMG5.jpg" alt="" class="home-images">
+                <div id="product-details">
+                    <div id="product-details-name">Exterior Renovations</div>
+                    </div>
+                    
+            </div>
+            <div id="home">
+                <img src="IMG6.jpg" alt="" class="home-images">
+                <div id="product-details">
+                    <div id="product-details-name">Desired Roofing</div>
+                    </div>
+                    
+            </div>
+            <div id="home">
+                <img src="IMG7.jpg" alt="" class="home-images">
+                <div id="product-details">
+                    <div id="product-details-name">House Construction</div>
+                    </div>
+                    
+            </div>
+
+        </div>
+    </div>
+    
+    <div class="ourwork">
+        <div class="record">
+            <div id="record1">
+                <h2>
+                    10+
+                </h2>
+                <p>Years In Bussiness</p>
+            </div>
+            <div id="record2">
+                <h2>500+</h2>
+                <p>Happpy Clients</p>
+            </div>
+            <div id="record3">
+                <h2>500+</h2>
+                <p>Projects Completed</p>
+            </div>
+            <div id="record4">
+                <h2>50+</h2>
+                <p>Trained Staff</p>
+            </div>
+        </div>
+        <div class="ourservices">
+           <div id="service"> 
+            <h3>Our services</h3>
+            <h1>We Provide Morden Architectural Design & General Construction</h1>
+        </div>
+            <div class="main-service">
+                <div class="service">
+                <img src="Home-renovation.jpg" alt=""></img>
+                <h3>
+                    Home Renovations
+                </h3>
+                <p>Our company of experts got you with the best <br>
+                of their house renovation plans. <br> We do our best to give 
+            your home a new and  <br>morden look your desire! <br>
+            <br>
+        <button onclick="showServices()">Read More</button></p>
+
+            </div>
+
+            <div class="service">
+                <img src="construction.jpg" alt=""></img>
+                <h3>
+                    House Plan Design
+                </h3>
+                <p>As a certified company of experts with architectural <br> experience,
+                we offer the best house plan designs <br> you desire.
+            If you already have a plan <br> and wish to upgrade
+             you can contact our <br> designers for a free quote.<br>
+             
+        <button onclick="showServices()">Read More</button></p>
+            </div>
+
+            <div class="service">
+                <img src="construction2.jpg" alt=""></img>
+                <h3>
+                    General Construction
+                </h3>
+                <p>We do not just sell you our plans, but we can turn these plans <br>
+                to a house of your dreams. We offer the best <br> construction services.
+            Become one of our certified customers <br> and experience the best of our services. <br>
+            <br>
+        <button onclick="showServices()">Read More</button></p>
+            </div>
+            </div>
+        </div>
+        <div class="additional-services">
+            <h1>We Also Offer</h1>
+            <p>Since we care a lot about our customers, <br>
+            we saw it best to extend our services to best fit your desires. <br>
+        We offer variety of services, We also offer you:</p>
+        <p>
+            &#11093 3D Rendering <br>
+            &#11093 Roofing <br>
+            &#11093 Floor Tiling <br>
+            &#11093 Painting <br>
+            &#11093 Ceiling <br>
+            <br>
+            <button onclick="showServices()">LEARN MORE</button>
+        </p>
+        </div>
+    </div>
+
+    <div class="choose-us">
+        <h3>Why Choose Us</h3>
+        <h1>Reasoans For Customers Choosing Us</h1>
+        <div class="choose">
+            <div class="choose-item">
+                <i class="fas fa-award"></i>
+                <h4>Quality Material</h4>
+                <p>We deliver the best quality material guranteed, <br>
+                Our services are also the best we offer</p>
+            </div>
+            <div class="choose-item">
+                <i class="fa fa-check-circle"></i>
+                <h4>Accredited</h4>
+                <p>Our Company is officially recognized and authorixed
+                to be the best service provider in business.</p>
+            </div>
+            <div class="choose-item">
+                <i class="far fa-user"></i>
+                <h4>Trained Workers</h4>
+                <p>Our team is filled with trained proffessionals <br>
+                who also have years of experience.</p>
+            </div>
+            <div class="choose-item">
+                <i class="fa fa-clock"></i>
+                <h4>Time Availability</h4>
+                <p>We are Available  throughout the year and deliver <br>
+                on schedule always</p>
+            </div>
+            <div class="choose-item">
+                <i class="fa fa-phone-volume"></i>
+                <h4>Quick Response</h4>
+                <p>We typically reply to service requests in no time <br>
+                and we value your patience</p>
+            </div>
+            <div class="choose-item">
+                <i class="fa fa-certificate"></i>
+                <h4>Years of Guranteed Services</h4>
+                <p>After services are delivered, we gunratee you <br>
+                years of indulgence of our work.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="column-container">
+        <div class="column1" id="columns">
+            <img src="ABOUTPIC.png" alt="">
+        </div>
+        <div class="column2" id="columns">
+            <h3>About Us</h3>
+            <h1>Proffessional House Plan Design & <br> General Construction</h1>
+            <p>Devise Project Development is a certified architectural design and general construction company 
+                with one goal only, which is to build you a home of your dreams.The company have been operating 
+                for years and delivering nothing but quality of services to our clients. Our house plans are 
+                unique, importantly they meet our customers needs at all times. When coming to constructiion 
+                we deliver nothing but the best houses, built with quality materials. <br>
+                <br>
+                Our panel of experts make it their task to deliver best of services you desire, our services 
+                are not limited; instead we have broad service delivery. These services can include home renovations,
+                3D Rendering, Ceiling and more. Interested in one of Our services? 
+                Contact our team which typically replies on time. We Welcome you!
+            </p>
+            <i class="fas fa-award"><span>   Registered Company</span></i>
+            <br>
+            <br>
+            <button onclick="openAbout()" >READ MORE</button>
+        </div>
+    </div>
+<div>
+<form method="post"  id="requestservice" action="https://script.google.com/macros/s/AKfycbyTL8jqv5GQIXhUaNzgiMzeMQxTDI7hFJMpiGXdMaBB2BVe852W4Pn2ee9BsAKKQ_aVmA/exec" name="request-form">
+    <div class="style-requests">
+        <h3>Request Our Services</h3>
+    <h1>Get A Free Quotation</h1>
+    <label for="FullNames">Full Names</label>
+    <input type="text" placeholder="Enter your full name" name="fullname" required>
+    <label for="PhoneNumber">Phone Number</label>
+    <input type="text" placeholder="Phone number" name="number" required>
+    <label for="Email">Email</label>
+    <input type="email" name="email" id="Email" placeholder="Enter your email" required>
+    <label for="SelectDesiredService">Select Desired Service</label>
+    <div id="checkbox">
+        <input  type="checkbox" value="House Plans" class="unselected" name="service"> <span>House Plans</span>
+        <input  type="checkbox" value="Home Renovations" class="unselected" name="service"><span>Home Renovations</span> 
+        <input  type="checkbox" value="3D Renderings" class="unselected" name="service"><span>3D Renderings</span>
+        <input  type="checkbox" value="General Construction" class="unselected" name="service"><span>General Construction</span>
+    </div>
+    <label for="service-Description">Service Description</label>
+    <textarea name="service_description" id="" cols="30" rows="10" placeholder="Please describe in detail your required service"></textarea>
+    <button type="submit">GET A FREE QUOTE</button>
+    </div>
+</form>
+</div>
+<script>
+    // script.js
+
+document.addEventListener('DOMContentLoaded', function () {
+    const checkboxes = document.querySelectorAll('.unselected');
+
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', function () {
+            if (this.checked) {
+                checkboxes.forEach(box => {
+                    if (box !== this) {
+                        box.parentElement.classList.add('unselected');
+                        box.checked = false;
+                    }
+                });
+            } else {
+                checkboxes.forEach(box => {
+                    box.parentElement.classList.remove('unselected');
+                });
+            }
+        });
+    });
+});
+
+</script>
+
+    <form id="leaveMessage" action="https://script.google.com/macros/s/AKfycbxauTOhCDnEsJAYaNvyYo8RpRRSNEexh3heCpXEZta-3OwvxQfWqfSPO2MZvA44LanS/exec" name="Message-Form" method="post">
+    <div id="messageUs">
+        <div class="message-content">
+            <h1>Leave Us A Message <span class="closeicon"><i class="fa fa-close" onclick="closeMessages()"></i></span></h1>
+            <div class="grid-elements">
+                <input type="text" name="first_name" placeholder="First Name" required>
+                <input type="text" name="last_name" placeholder="Last Name" required>
+                <input type="text" name="phone_number" placeholder="Phone Number" required>
+                <input type="email" name="email" placeholder="Email" required>
+            </div>
+            <textarea name="message" id="yourMessage" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </div>
+    </div>
+</form>
+ 
+    <footer id="footer">
+        <div class="footer">
+            <h1>Connect With Us</h1>
+            <div id="socials">
+            <a href="https://www.facebook.com/DPD-HousePlanningandGeneralConstruction.org/"
+            target="_blank"
+            title="Facebook" style="color: white;"><i class="fa fa-facebook"></i></a>
+            <a href="mailto:khozasiyabonga1@gmail.com?subject=Service Request"
+            title="Email"
+            target="_blank" style="color: white;"><i class="fa fa-envelope"></i></a>
+            <a href="tel:072-464-7583"
+            title="Call"
+            target="_blank" style="color: white;"><i class="fa fa-phone"></i></a>
+            <a href=
+            "https://api.whatsapp.com/send?phone=+27724647583"
+              title="Whatsapp"     
+              target="_blank" style="color: white;"><i class="fa fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="footer">
+            <h1>Useful Links</h1>
+                <div id="footer-links">
+                    <a href="services.html" class="added-links" style="color: white;"><li>Construction</li></a>
+                    <a href="services.html" class="added-links" style="color: white;"><li style="margin-left: 35px;">3D Rendering</li></a>
+                </div>
+               <div id="footer-links">
+                <a href="services.html" class="added-links" style="color: white;"><li>Renovations</li></a>
+                <a href="services.html" class="added-links" style="color: white;"><li style="margin-left: 40px;">House Plans</li></a>
+               </div>
+        </div>
+        <div class="footer">
+            <h1>Contact Us</h1>
+            <address>
+                <b>Visit Us:</b>  <br> 
+                1467A Mangaung Village <br>
+                Witsishoek <br>
+                Mokodumela <br>
+                9868
+            </address>
+        </div>
+        
+        <div class="footer-last-content">
+            <hr id="hr5">
+            <br>
+           <div>
+            <p>&#169 2024 Divise Project Development Pty. Ltd. <br>
+             Artchitechtural Design & <span> General Constructions</span>
+            <br> All rights reserved
+            </p>
+           </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

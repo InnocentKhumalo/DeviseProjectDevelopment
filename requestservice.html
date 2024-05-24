@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>House Plan Service Request</title>
+  <link rel="stylesheet" href="Formstyles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Devise Project Development Service Requests</h1>
+    <div id="service-request">
+      <div class="image-container">
+          <img src="" alt="Selected Image" id="selected-image">
+      </div>
+      <div class="selected-service-details">
+        <h2 id="selectedServiceName"></h2>
+      </div>
+  </div>
+  
+  <script>
+  window.onload = function() {
+      var params = new URLSearchParams(window.location.search);
+      var imageNumber = params.get('image');
+      var image = document.getElementById('selected-image');
+      var description = document.getElementById('SelectedServiceName');
+  
+      // Set image source and description based on the clicked image number
+      switch (imageNumber) {
+          case '1':
+              image.src = 'whatsapp6.jpg';
+              description.textContent = '2 Bedroom';
+              break;
+          case '2':
+              image.src = '3 bedroom.jpg';
+              description.textContent = '3 Bedroom';
+              break;
+          case '3':
+              image.src = 'whatsapp4.jpg';
+              description.textContent = '4 Bedroom';
+              break;
+          case '4':
+              image.src = 'whatsapp7.jpg';
+              description.textContent = '5 Bedroom';
+              break;
+          case '5':
+              image.src = 'whatsapp2.jpg';
+              description.textContent = '6 Bedroom Double Story';
+              break;
+          case '6':
+              image.src = 'whatsapp1.jpg';
+              description.textContent = 'Double Story';
+              break;
+          case '7':
+              image.src = 'whatsapp5.jpg';
+              description.textContent = 'Butterfly Double Story';
+              break;
+          case '8':
+              image.src = 'tuscan.jpg';
+              description.textContent = 'Tuscan/Scotch Roofing';
+              break;
+          case '9':
+              image.src = 'maxresdefault.jpg';
+              description.textContent = 'Butterfly Roofing';
+              break;
+          case '10':
+              image.src = 'whatsapp3.jpg';
+              description.textContent = 'Mall/Complex';
+              break;
+          case '11':
+              image.src = 'communitybuilding.jpg';
+              description.textContent = 'Community Buildings';
+              break;
+          case '12':
+              image.src = 'design1.jpg';
+              description.textContent = 'House Plan';
+              break;
+              case '13':
+              image.src = 'roofing.jpg';
+              description.textContent = 'Roofing';
+              break;
+              case '14':
+              image.src = 'art1.jpg';
+              description.textContent = 'House Renovations';
+              break;
+              case '15':
+              image.src = 'painter.jpg';
+              description.textContent = 'Painting';
+              break;
+              case '16':
+              image.src = 'General-Constractors-rev2.jpg';
+              description.textContent = '3D Renderings';
+              break;
+              case '17':
+              image.src = 'tilingJob.jpg';
+              description.textContent = '3D Renderings';
+              break;
+              case '18':
+              image.src = 'ceiling.jpg';
+              description.textContent = 'Ceiling';
+              break;
+              case '19':
+              image.src = 'art2.jpg';
+              description.textContent = 'General Construction';
+              break;
+          default:
+              // Handle invalid image number
+              break;
+      }
+  };
+  
+  </script>
+   
+       
+   </head>
+   <body>
+       <form id="serviceForm" action="https://script.google.com/macros/s/AKfycbwYj-Cy3xk3-264RiwoSKecbDYL-9lxQv0jEwvZbcfk7lLp4d1bok-kNxfvye3Nfl7a/exec" method="post">
+           <div class="form-group">
+               <label for="fullName">Full Name:</label>
+               <input type="text" id="fullName" name="fullName" placeholder="Client Full Names" required>
+           </div>
+           <div class="form-group">
+               <label for="email">Email:</label>
+               <input type="email" id="email" name="email" placeholder="Client Email Address" required>
+           </div>
+           <div class="form-group">
+               <label for="phone">Phone Number:</label>
+               <input type="tel" id="phone" name="phone" placeholder="Client Phone Number" required>
+           </div>
+           <div class="form-group">
+               <label for="address">Address:</label>
+               <input type="text" id="address" name="address" placeholder="Physical Address" required>
+           </div>
+           <div class="form-group">
+               <label for="city">City:</label>
+               <input type="text" id="city" name="city" placeholder="Residential city" required>
+           </div>
+           <div class="form-group">
+               <label for="state">State:</label>
+               <input type="text" id="state" name="state" placeholder="Province" required>
+           </div>
+           <div class="form-group">
+               <label for="projectType">Project Type:</label>
+               <select id="projectType" name="projectType" required>
+                   <option value="">Select Project Type</option>
+                   <option value="House Plan">House Plan</option>
+                   <option value="New Construction">New Construction</option>
+                   <option value="Renovation">Renovation</option>
+                   <option value="Extension">3D Rendering</option>
+                   <option value="Other">Other</option>
+               </select>
+           </div>
+           <div class="form-group">
+               <label for="serviceDetails">Service Details:</label>
+               <textarea id="serviceDetails" name="serviceDetails" rows="4" placeholder="Full project description" required></textarea>
+           </div>
+           <button type="submit">Submit Request</button>
+       </form>
+   
+  </div>
+
+  <script src="Formscript.js"></script>
+</body>
+</html>
