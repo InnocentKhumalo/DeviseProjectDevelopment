@@ -23,29 +23,23 @@
       var params = new URLSearchParams(window.location.search);
       var imageNumber = params.get('image');
       var image = document.getElementById('selected-image');
-      var description = document.getElementById('SelectedServiceName');
   
       // Set image source and description based on the clicked image number
       switch (imageNumber) {
           case '1':
               image.src = 'whatsapp6.jpg';
-              description.textContent = '2 Bedroom';
               break;
           case '2':
               image.src = '3 bedroom.jpg';
-              description.textContent = '3 Bedroom';
               break;
           case '3':
               image.src = 'whatsapp4.jpg';
-              description.textContent = '4 Bedroom';
               break;
           case '4':
               image.src = 'whatsapp7.jpg';
-              description.textContent = '5 Bedroom';
               break;
           case '5':
               image.src = 'whatsapp2.jpg';
-              description.textContent = '6 Bedroom Double Story';
               break;
           case '6':
               image.src = 'whatsapp1.jpg';
@@ -53,59 +47,42 @@
               break;
           case '7':
               image.src = 'whatsapp5.jpg';
-              description.textContent = 'Butterfly Double Story';
               break;
           case '8':
               image.src = 'tuscan.jpg';
-              description.textContent = 'Tuscan/Scotch Roofing';
               break;
           case '9':
               image.src = 'maxresdefault.jpg';
-              description.textContent = 'Butterfly Roofing';
               break;
           case '10':
               image.src = 'whatsapp3.jpg';
-              description.textContent = 'Mall/Complex';
               break;
           case '11':
               image.src = 'communitybuilding.jpg';
-              description.textContent = 'Community Buildings';
               break;
           case '12':
               image.src = 'design1.jpg';
-              description.textContent = 'House Plan';
               break;
               case '13':
               image.src = 'roofing.jpg';
-              description.textContent = 'Roofing';
               break;
               case '14':
               image.src = 'art1.jpg';
-              description.textContent = 'House Renovations';
               break;
               case '15':
               image.src = 'painter.jpg';
-              description.textContent = 'Painting';
               break;
               case '16':
               image.src = 'General-Constractors-rev2.jpg';
-              description.textContent = '3D Renderings';
               break;
               case '17':
               image.src = 'tilingJob.jpg';
-              description.textContent = '3D Renderings';
               break;
               case '18':
               image.src = 'ceiling.jpg';
-              description.textContent = 'Ceiling';
               break;
               case '19':
               image.src = 'art2.jpg';
-              description.textContent = 'General Construction';
-              break;
-          default:
-              // Handle invalid image number
-              break;
       }
   };
   
