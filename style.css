@@ -660,6 +660,11 @@ transform: scale(1.1);
 }
 
 @media only screen and (max-width: 900px){
+.high-demand{
+display: grid;
+grid-template-columns: repeat (2, 2fr);
+grid-gap: 10px;
+}
     .navbar-items{
         display: none;
     }  
