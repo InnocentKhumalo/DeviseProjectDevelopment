@@ -1,5 +1,5 @@
 function closeReview() {
-    document.getElementById("review-popup").style.display = "none";
+    document.getElementById("review-popup").style.display = "";
 }
 function showReviews() {
     document.getElementById("review-popup").style.display = "flex";
@@ -20,31 +20,31 @@ function previewImage(event) {
 
 function openLeaveMessage() {
     document.getElementById("messageUs").style.display = "flex";
-    document.getElementById("sidebar-container").style.display ="none";
+    document.getElementById("sidebar-container").style.display ="";
 }
 function closeMessages() {
     document.getElementById("messageUs").style.display = "none";
 }
 function showFirstDropdown() {
-   if (document.getElementById("first-dropdown").style.display === "none") {
+   if (document.getElementById("first-dropdown").style.display === "") {
      document.getElementById("first-dropdown").style.display = "block";
      document.getElementById("icon1").classList.add("rotate");
    } else {
-    document.getElementById("first-dropdown").style.display = "none";
+    document.getElementById("first-dropdown").style.display = "";
     document.getElementById("icon1").classList.remove("rotate");
    }
 }
 function showSecondDropdown() {
-    if (document.getElementById("second-dropdown").style.display === "none") {
+    if (document.getElementById("second-dropdown").style.display === "") {
         document.getElementById("second-dropdown").style.display = "block"; 
         document.getElementById("icon2").classList.add("rotate");
     } else {
-       document.getElementById("second-dropdown").style.display = "none";
+       document.getElementById("second-dropdown").style.display = "";
        document.getElementById("icon2").classList.remove("rotate");
     }
 }
 function showMessageLinks() {
-    if (document.getElementById("cont-content").style.display === "none") {
+    if (document.getElementById("cont-content").style.display === "") {
         document.getElementById("cont-content").style.display = "block"; 
         document.getElementById("icon3").classList.add("rotate");
         
@@ -54,11 +54,11 @@ function showMessageLinks() {
     }
 }
 function showLinks() {
-    if (document.getElementById("link-socials").style.display === "none") {
+    if (document.getElementById("link-socials").style.display === "") {
         document.getElementById("link-socials").style.display = "block"; 
         document.getElementById("icon4").classList.add("rotate");
     } else {
-       document.getElementById("link-socials").style.display = "none";
+       document.getElementById("link-socials").style.display = "";
        document.getElementById("icon4").classList.remove("rotate");
     }
 }
@@ -66,7 +66,7 @@ function showsidebar() {
     document.getElementById("sidebar-container").style.display = "block";
 }
 function hidesidebar() {
-    document.getElementById("sidebar-container").style.display = "none";
+    document.getElementById("sidebar-container").style.display = "";
 }
 
 function showServices() {
