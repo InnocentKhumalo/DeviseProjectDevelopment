@@ -431,9 +431,11 @@ transform: scale(1.1112);
     padding: 20px;
     justify-content: space-around;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
 }
 .choose-item{
+flex-grow: 1;
+flex-basis: 200;
     background-color: white;
     box-sizing: border-box;
     border: 1px solid black;
