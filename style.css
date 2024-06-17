@@ -863,17 +863,7 @@ transform: scale(1.1);
     padding: 10px;
     margin: 0 auto;
     }
-    .choose{
-        display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-    padding: 10px;
-    margin: 0 auto;
-    }
-    .choose-item{
-        width: auto;
-        height: auto;
-    }
+   
 }
 
 .slideshow-container {
