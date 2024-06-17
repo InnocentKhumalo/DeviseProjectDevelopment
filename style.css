@@ -843,7 +843,7 @@ transform: scale(1.1);
     .ideal-home{
         display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
+    grid-gap: 5px;
     padding: 10px;
     margin: 0 auto;
     }
@@ -861,7 +861,7 @@ transform: scale(1.1);
     .high-demand{
         display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
+    grid-gap: 5px;
     padding: 10px;
     margin: 0 auto;
     }
