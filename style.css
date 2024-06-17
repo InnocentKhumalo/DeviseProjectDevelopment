@@ -847,14 +847,14 @@ transform: scale(1.1);
     }
     .houses{
         width: auto;
-        height: auto;
+        height: 140px;
     }
     #houses-last{
         display: none;
     }
     #home{
         width: auto;
-        height: auto;
+        height: 140px;
     }
     .high-demand{
         display: grid;
@@ -872,7 +872,7 @@ transform: scale(1.1);
     }
     .choose-item{
         width: auto;
-        height: auto;
+        height: 140px;
     }
 }
 
